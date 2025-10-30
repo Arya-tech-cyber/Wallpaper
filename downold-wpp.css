@@ -1,0 +1,73 @@
+/* Styling untuk keseluruhan BODY (Opsional) */
+body {
+    background-color: #1a1a1a; /* Latar belakang gelap */
+    color: white; /* Teks berwarna putih */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* CONTAINER UTAMA: Mengatur Posisi di Tengah dan Horizontal */
+.container-bergabung {
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: center; /* Memusatkan horizontal di tengah layar */
+    align-items: flex-start; /* Elemen dimulai dari atas */
+    padding-top: 80px; /* Jarak dari atas halaman */
+    gap: 100px; /* Jarak yang lebar antara gambar dan tombol */
+}
+
+/* GAMBAR WALLPAPER PREVIEW */
+.div-img-dow {
+    /* Menetapkan lebar agar gambar terlihat besar */
+    width: 650px; 
+    height: auto;
+    overflow: hidden;
+    /* Memberikan sedikit bingkai elegan */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    border-radius: 10px;
+}
+
+.div-img-dow img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.div-click-downold {
+    padding-top: 50px; 
+}
+
+.dw {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.downold {
+    width: 300px; 
+    height: 100px; 
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5%;
+}
+
+.downold:hover {
+    transform: scale(1.05); 
+    opacity: 0.9;
+}
+
+.kembali-link {
+    /* Margin di atas tautan kembali */
+    margin-top: 30px; 
+}
+
+.kembali-btn {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out; 
+}
+
+.kembali-btn:hover {
+    color: #2980b9; 
+}
