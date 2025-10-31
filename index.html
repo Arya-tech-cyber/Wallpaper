@@ -1,110 +1,112 @@
 <html>
-     <head>
-      <link rel="stylesheet" href="style.css"/>
-      <title>Serch Wallpaper</title>
-      
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Wallpaper Cool Res 2K</title>
     </head>
     <body class="body-home">
-         <div class="halo">
-           <ul class="kon">
-              <li class="li-kon">
-                <p class="input">Downold The wallpaper</p>
-              </li>
-           </ul>
-         </div>
-        <div class="gak-tau">
-            <ul class="ul-gak-tau">
-               <li class="li-gak-tau">
-                 <a href="Read-more.html" class="yes">Read More</a>
-               </li>
-                <li class="li-gak-tau">
-                 <a class="yes">Downolds Wallpaper Cool For Windows</a>
-               </li class="li-gak-tau">
-                 <li class="li-gak-tau">
-                 <a class="yes">Downolds Wallpaper Cool For Mac Os</a>
-               </li>
-            </ul>
-        </div>
-        <div class="wpp-container">
-           <!-- gambar wpp -->
-               <div class="div-wpp-gambar1">
-                <a class="a-wpp-16" href="downold-wpp.html">
-                     <img src="wallpaperflare.com_wallpaper (16).jpg" class="img-16">
-                </a>
-               </div>
-           <!-- gambar wpp selesai -->
 
-           <!-- container up -->
-              <div class="div-wpp2">
-                <a class="a-wpp2" href="downold-wpp.html">
-                   <img src="wallpaperflare.com_wallpaper (1).jpg" class="img-wpp2"/>
-                </a>
-              </div>
-           <!-- container up than -->
+        <a id="menu-toggle" class="a-border">
+            <p class="border">...</p>
+        </a>
 
-           <!-- wpp 3 -->
-          <div class="div-wpp3">
-            <a class="a-wpp3" href="downold-wpp.html">
-              <img src="wallpaperflare.com_wallpaper (3).jpg" class="img-wpp3"/>
-            </a>
-          </div>
-           <!-- wpp3 than -->
+        <div id="sliding-menu">
+            <a id="close-menu" class="yes" style="float: right; font-size: 2em; text-decoration: none; cursor: pointer;">&times;</a>
+            <div class="gak-tau">
+                <ul class="ul-gak-tau">
+                    <li class="li-gak-tau">
+                        <a href="Read-more.html" class="yes">Read More</a>
+                    </li>
+                    <li class="li-gak-tau">
+                        <a href="Downold The Aps For Windows" class="yes">Downolds Wallpaper Cool For Windows</a>
+                    </li>
+                    <li class="li-gak-tau"> 
+                        <a class="yes">Downolds Wallpaper Cool For Mac Os</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         
+        <div id="main-content">
+        <div class="halo">
+                <ul class="kon">
+                    <li class="li-kon">
+                        <p class="input">Downold The wallpaper</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="wpp-container">
+                <div class="div-wpp-gambar1">
+                    <a class="a-wpp-16" href="dw-img1.html">
+                        <img src="wallpaperflare.com_wallpaper (16).jpg" class="img-16">
+                    </a>
+                </div>
+                <div class="div-wpp2">
+                    <a class="a-wpp2" href="downold-wpp.html">
+                        <img src="wallpaperflare.com_wallpaper (1).jpg" class="img-wpp2"/>
+                    </a>
+                </div>
+                <div class="div-wpp3">
+                    <a class="a-wpp3" href="dw-img3.html">
+                        <img src="wallpaperflare.com_wallpaper (3).jpg" class="img-wpp3"/>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="wpp-container">
+                <div class="div-wpp-gambar1">
+                    <a class="a-wpp-16" href="dw-img4.html">
+                        <img src="wallpaperflare.com_wallpaper (43).jpg" class="img-16">
+                    </a>
+                </div>
+                <div class="div-wpp2">
+                    <a class="a-wpp2" href="dw-img5.html">
+                        <img src="wallpaperflare.com_wallpaper (47).jpg" class="img-wpp2"/>
+                    </a>
+                </div>
+                <div class="div-wpp3">
+                    <a class="a-wpp3" href="dw-img6.html">
+                        <img src="wallpaperflare.com_wallpaper (48).jpg" class="img-wpp3"/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wpp-container">
+                <div class="div-wpp-gambar1">
+                    <a class="a-wpp-16" href="downold-wpp.html">
+                        <img src="wallpaperflare.com_wallpaper (2).jpg" class="img-16">
+                    </a>
+                </div>
+                <div class="div-wpp2">
+                    <a class="a-wpp2" href="downold-wpp.html">
+                        <img src="wallpaperflare.com_wallpaper (20).jpg" class="img-wpp2"/>
+                    </a>
+                </div>
+                <div class="div-wpp3">
+                    <a class="a-wpp3" href="downold-wpp.html">
+                        <img src="wallpaperflare.com_wallpaper (41).jpg" class="img-wpp3"/>
+                    </a>
+                </div>
+            </div>
+            
+        </div> <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const slidingMenu = document.getElementById('sliding-menu');
+            const mainContent = document.getElementById('main-content');
+            const closeMenu = document.getElementById('close-menu');
+            
+            function toggleMenu(e) {
+                // Mencegah link pindah halaman jika tombol (+) memiliki href
+                if (e) e.preventDefault(); 
+                
+                // Tambahkan/hapus kelas 'open' dan 'pushed'
+                slidingMenu.classList.toggle('open');
+                mainContent.classList.toggle('pushed');
+            }
+
+            menuToggle.addEventListener('click', toggleMenu);
+            closeMenu.addEventListener('click', toggleMenu);
+        </script>
         
-        
-        <div class="wpp-container">
-           <!-- gambar wpp -->
-               <div class="div-wpp-gambar1">
-                <a class="a-wpp-16" href="downold-wpp.html">
-                     <img src="wallpaperflare.com_wallpaper (43).jpg" class="img-16">
-                </a>
-               </div>
-           <!-- gambar wpp selesai -->
-
-           <!-- container up -->
-              <div class="div-wpp2">
-                <a class="a-wpp2" href="downold-wpp.html">
-                   <img src="wallpaperflare.com_wallpaper (47).jpg" class="img-wpp2"/>
-                </a>
-              </div>
-           <!-- container up than -->
-
-           <!-- wpp 3 -->
-          <div class="div-wpp3">
-            <a class="a-wpp3" href="downold-wpp.html">
-              <img src="wallpaperflare.com_wallpaper (48).jpg" class="img-wpp3"/>
-            </a>
-          </div>
-           <!-- wpp3 than -->
-        </div>
-
-
-
-        <div class="wpp-container">
-           <!-- gambar wpp -->
-               <div class="div-wpp-gambar1">
-                <a class="a-wpp-16" href="downold-wpp.html">
-                     <img src="wallpaperflare.com_wallpaper (2).jpg" class="img-16">
-                </a>
-               </div>
-           <!-- gambar wpp selesai -->
-
-           <!-- container up -->
-              <div class="div-wpp2">
-                <a class="a-wpp2" href="downold-wpp.html">
-                   <img src="wallpaperflare.com_wallpaper (20).jpg" class="img-wpp2"/>
-                </a>
-              </div>
-           <!-- container up than -->
-
-           <!-- wpp 3 -->
-          <div class="div-wpp3">
-            <a class="a-wpp3" href="downold-wpp.html">
-              <img src="wallpaperflare.com_wallpaper (41).jpg" class="img-wpp3"/>
-            </a>
-          </div>
-           <!-- wpp3 than -->
-        </div>
-        </body>
+    </body>
 </html>

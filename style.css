@@ -1,5 +1,6 @@
 .halo {
     background-color: ;
+    
 }
 
 .li-kon {
@@ -15,6 +16,8 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .li-gak-tau {
@@ -134,4 +137,72 @@
 
 .div-wpp3:hover {
     cursor: pointer;
+}
+
+.border {
+    font-size: 3cm;
+    display: block;
+    margin: 0%;
+    padding: 0;
+     display: inline-block;
+}
+
+.a-border {
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#menu-toggle {
+    position: fixed;
+    top: 0px; 
+    left: 2px;
+    z-index: 1001; 
+    cursor: pointer;
+    color: white; 
+    padding: 0%;
+    cursor: pointer;
+}
+
+#menu-togel.border {
+    font-size: 3cm; 
+    margin: 0; 
+    padding: 5px 10px;
+}
+
+
+#sliding-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1001; 
+    transition: left 0.3s ease; 
+}
+
+#sliding-menu.open {
+    left: 0; /* Tampilkan menu */
+}
+
+#main-content {
+    transition: margin-left 0.3s ease; /* Transisi untuk geser konten */
+    margin-left: 0; 
+}
+
+#main-content.pushed {
+    margin-left: 250px; /* Dorong konten ke kanan */  
+}
+
+.close-menu {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    z-index: 1001; 
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
