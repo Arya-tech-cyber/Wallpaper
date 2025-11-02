@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="style.css"/>
@@ -6,21 +7,22 @@
     <body class="body-home">
 
         <a id="menu-toggle" class="a-border">
-            <p class="border">...</p>
+            <div class="hamburger-line"></div>
         </a>
 
         <div id="sliding-menu">
-            <a id="close-menu" class="yes" style="float: right; font-size: 2em; text-decoration: none; cursor: pointer;">&times;</a>
-            <div class="gak-tau">
-                <ul class="ul-gak-tau">
-                    <li class="li-gak-tau">
-                        <a href="Read-more.html" class="yes">Read More</a>
+            <a id="close-menu" class="close-menu">&times;</a>
+            
+            <div class="div-menu-list">
+                <ul class="ul-menu-list">
+                    <li class="li-menu-item">
+                        <a href="Read-more.html" class="menu-link">Read More</a>
                     </li>
-                    <li class="li-gak-tau">
-                        <a href="Downold The Aps For Windows" class="yes">Downolds Wallpaper Cool For Windows</a>
+                    <li class="li-menu-item"> 
+                        <a href="Downold The Aps For Windows" class="menu-link">Download Wallpaper Cool For Windows</a>
                     </li>
-                    <li class="li-gak-tau"> 
-                        <a class="yes">Downolds Wallpaper Cool For Mac Os</a>
+                    <li class="li-menu-item"> 
+                        <a class="menu-link">Download Wallpaper Cool For Mac Os</a>
                     </li>
                 </ul>
             </div>
@@ -30,7 +32,7 @@
         <div class="halo">
                 <ul class="kon">
                     <li class="li-kon">
-                        <p class="input">Downold The wallpaper</p>
+                        <p class="input">Download The wallpaper</p>
                     </li>
                 </ul>
             </div>
@@ -89,19 +91,19 @@
                 </div>
             </div>
             
-        </div> <script>
+        </div> 
+        
+        <script>
             const menuToggle = document.getElementById('menu-toggle');
             const slidingMenu = document.getElementById('sliding-menu');
             const mainContent = document.getElementById('main-content');
             const closeMenu = document.getElementById('close-menu');
             
             function toggleMenu(e) {
-                // Mencegah link pindah halaman jika tombol (+) memiliki href
                 if (e) e.preventDefault(); 
                 
-                // Tambahkan/hapus kelas 'open' dan 'pushed'
                 slidingMenu.classList.toggle('open');
-                mainContent.classList.toggle('pushed');
+                mainContent.classList.toggle('pushed'); // INI KRITIS UNTUK MENGGESER KONTEN
             }
 
             menuToggle.addEventListener('click', toggleMenu);
